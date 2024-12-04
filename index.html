@@ -1,42 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Weather Forecast</title>
+	</head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&display=swap"
-		rel="stylesheet">
-	<title>Weather Forecast</title>
-</head>
-
-<body>
-	<section class="container">
-		<div class="left-panel">
-			<div class="weather-side">
-				<div class="date-container">
-					<h2 class="date-dayname">Saturday</h2>
-					<span class="date-name">10 Feb 2024</span>
-					<span class="location">Waldorf</span>
+	<body>
+		<section class="container">
+			<div class="left-panel">
+				<div class="weather-side">
+					<div class="date-container">
+						<h2 class="date-dayname">Saturday</h2>
+						<span class="date-name">10 Feb 2024</span>
+						<span class="location">Waldorf</span>
+					</div>
+				</div>
+				<div class="weather">
+					<span class="weather-icon"></span>
+					<div class="weather-temp">28&deg</div>
+					<div class="weather-description">Clear Sky</div>
 				</div>
 			</div>
-			<div class="weather">
-				<span class="weather-icon"></span>
-				<div class="weather-temp">28&deg</div>
-				<div class="weather-description">Cleary Sky</div>
-			</div>
-		</div>
-		<div class="right-panel">
-			<div class="info-side">
+			<div class="right-panel">
 				<div class="today-info">
 					<div class="humidity">HUMIDITY</div>
 					<div class="wind">WIND</div>
 				</div>
-			</div>
-			<div class="week-container">
 				<ul class="week-list">
 					<li>
 						<span class="day-name">Sunday</span>
@@ -64,13 +61,9 @@
 						<span class="weather-icon"></span>
 					</li>
 				</ul>
+				<input class="location-input" type="text" id="city" value="Waldorf" />
 			</div>
-			<div class="location-container">
-				<input class="location-input" type="text" id="city" value="Waldorf">
-			</div>
-		</div>
-	</section>
-
-</body>
+		</section>
+	</body>
 
 </html>

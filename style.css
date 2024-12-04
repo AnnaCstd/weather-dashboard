@@ -1,29 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: blue;
+
 .container {
+
 	display: flex;
-	height: 50vh;
-	width: 50vw;
+	height: 100vh;
+	width: 100vw;
 	padding: 100px;
+	align-items: center;
+	background-color: ;
 }
 
 .left-panel {
 	flex: 1;
-	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 20px;
+	border: 10px solid black
 }
 
-.week-container .today-info	{
+.right-panel {
 	flex: 2;
-	display: flex; 
-	flex-direction: row;
 }
 
 .week-list {
 	list-style: none;
 	display: flex;
-	padding: 
+
 }
 
-.location-container {
+.location-container
 }
