@@ -1,36 +1,109 @@
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-color: blue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	height: 100vh;
+	background-color:#7097b8;
+
+}
 
 .container {
-
 	display: flex;
-	height: 100vh;
-	width: 100vw;
-	padding: 100px;
-	align-items: center;
-	background-color: ;
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: auto;
+	width: 40%;
+	border-radius: 15px;
+	padding: 10px;
+	box-sizing: border-box;
+	background-color:#0d1c2c ;
+	font-family: "Afacad", sans-serif;
 }
-
-.left-panel {
+.left-panel, .right-panel {
 	flex: 1;
+	min-width: 45%;
+	overflow: hidden;
+}
+.left-panel {
+	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	padding: 20px;
-	border: 10px solid black
+	border-radius: 15px;
+	padding: 1rem;
+	background-color:#4a6b93 ;
+
+}
+.date-container {
+	display: flex;
+	flex-direction: column;
 }
 
+.date-dayname {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.date-name, .location {
+	font: 1rem;
+}
+.weather {
+	padding: 30px;
+	padding-left: 0px;
+}
 .right-panel {
+	display: flex;
 	flex: 2;
+	flex-direction: column;
+	padding: 0rem;
+	border-radius: 15px;
+	margin-left: .5rem;
+	gap: .5rem;
+
+}
+
+.today-info {
+	display: flex;
+	flex-direction: column;
+	border-radius: 15px;
+	background-color: #4a6b93;
+}
+.location-input {
+	padding: 1rem;
+}
+
+.location-input:focus {
+	border-color: blue;
+	outline: none;
+}
+
+.info-row {
+	display: flex;
+	justify-content: space-between;
+	padding: .5rem;
 }
 
 .week-list {
-	list-style: none;
 	display: flex;
-
+	flex:auto;
+	flex-direction: column;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	gap: .5rem;
 }
 
-.location-container
+.week-list li {
+	display: flex;
+	justify-content: space-between;
+	border-radius: 10px;
+	padding: 1rem;
+
+	background-color: #4a6b93;
 }
+
+.date-dayname {
+	font-size: 3rem;
+}
+
