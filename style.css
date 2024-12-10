@@ -1,38 +1,42 @@
+:root {
+	--text-color: rgb(219, 204, 186);
+	--background-color: #4a6b93;
+}
+
 body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin: 0;
 	height: 100vh;
-	background-color:#7097b8;
-
+	background-color: #7097b8;
 }
 
 .container {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
 	height: auto;
 	width: 40%;
-	border-radius: 15px;
+	border-radius: 1rem;
 	padding: 10px;
 	box-sizing: border-box;
-	background-color:#0d1c2c ;
+	background-color: #0d1c2c;
 	font-family: "Afacad", sans-serif;
+	color: var(--text-color);
+	gap: 0.5rem;
 }
-.left-panel, .right-panel {
+.left-panel,
+.right-panel {
 	flex: 1;
-	min-width: 45%;
 	overflow: hidden;
 }
 .left-panel {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	border-radius: 15px;
+	border-radius: 1rem;
 	padding: 1rem;
-	background-color:#4a6b93 ;
-
+	background-color: var(--background-color);
 }
 .date-container {
 	display: flex;
@@ -42,68 +46,84 @@ body {
 .date-dayname {
 	font-size: 1.5rem;
 	font-weight: bold;
-	margin-right: 10px;
 }
 
-.date-name, .location {
+.date-name,
+.location {
 	font: 1rem;
 }
 .weather {
-	padding: 30px;
+	padding: 1rem;
 	padding-left: 0px;
 }
+
 .right-panel {
 	display: flex;
-	flex: 2;
 	flex-direction: column;
 	padding: 0rem;
-	border-radius: 15px;
-	margin-left: .5rem;
-	gap: .5rem;
-
+	border-radius: 1rem;
+	gap: 0.5rem;
 }
 
 .today-info {
 	display: flex;
 	flex-direction: column;
-	border-radius: 15px;
-	background-color: #4a6b93;
+	border-radius: 1rem;
+	background-color: var(--background-color);
 }
 .location-input {
 	padding: 1rem;
+	background-color: var(--background-color);
+	-webkit-appearance: none;
+	border: 0.1rem solid var(--text-color);
+	border-radius: 0.8rem;
+	margin: 1rem;
+}
+
+.location-input::placeholder {
+	color: var(--text-color);
 }
 
 .location-input:focus {
-	border-color: blue;
-	outline: none;
+	background-color: var(--text-color);
 }
 
 .info-row {
 	display: flex;
 	justify-content: space-between;
-	padding: .5rem;
+	padding: 0.5rem;
 }
 
 .week-list {
 	display: flex;
-	flex:auto;
+	flex: auto;
 	flex-direction: column;
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
-	gap: .5rem;
+	gap: 0.5rem;
 }
 
 .week-list li {
 	display: flex;
 	justify-content: space-between;
-	border-radius: 10px;
+	border-radius: 0.8rem;
 	padding: 1rem;
 
-	background-color: #4a6b93;
+	background-color: var(--background-color);
 }
 
 .date-dayname {
 	font-size: 3rem;
 }
 
+@media (max-width: 850px) {
+	.container {
+		flex-direction: column;
+		min-width: 350px;
+	}
+
+	.left-panel {
+		flex-direction: row;
+	}
+}
