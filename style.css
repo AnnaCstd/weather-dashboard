@@ -57,6 +57,10 @@ body {
 	padding-left: 0;
 }
 
+.material-symbols-outlined {
+	justify-content: center;
+}
+
 .weather-temp {
 	font-size: 3rem;
 	font-weight: bold;
@@ -96,10 +100,17 @@ body {
 .info-row {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
 	padding: 0.5rem;
 	margin: 0 0.5rem;
 }
 
+.left-group {}	display: flex;
+	align-items: center;
+
+	;
+}
 .week-list {
 	display: flex;
 	flex: auto;
