@@ -106,11 +106,11 @@ body {
 	margin: 0 0.5rem;
 }
 
-.left-group {}	display: flex;
+.left-group {
+	display: flex;
 	align-items: center;
-
-	;
 }
+
 .week-list {
 	display: flex;
 	flex: auto;
